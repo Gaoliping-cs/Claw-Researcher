@@ -1,0 +1,21 @@
+```yaml
+version: "3.9"
+
+services:
+
+  openclaw:
+    image: openclaw/openclaw:latest
+    container_name: openclaw
+
+    volumes:
+      - ./config:/app/config
+      - ./data:/app/data
+
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+
+    ports:
+      - "3333:3333"
+
+    command: >
+      sh -c "openclaw start clawresearcher --config /app/config/agent.yaml"
