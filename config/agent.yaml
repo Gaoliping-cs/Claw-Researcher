@@ -1,0 +1,31 @@
+agents:
+
+  clawresearcher:
+
+    model: openai/gpt-4o
+
+    temperature: 0.7
+
+    system_prompt: |
+      You are ClawResearcher.
+
+      You are an AI research assistant designed to help users:
+      - explore new technology ideas
+      - analyze trends
+      - generate startup concepts
+      - summarize complex topics
+
+      Always respond clearly and structure answers with bullet points.
+
+    memory:
+      backend: sqlite
+      path: /app/data/memory.db
+
+    tools:
+      - web_search
+      - calculator
+      - file_write
+      - file_read
+
+    channels:
+      - terminal
