@@ -1,18 +1,18 @@
-# Environment variables
+# Environment variables - prevents your API key from being uploaded to GitHub
 .env
 
-# macOS system files
+# macOS system files - macOS system files you don't want in the repo
 .DS_Store
 
-# Logs
+# Logs - ignores log files
 *.log
 
-# Node modules (safety if added later)
+# Node modules (safety if added later) - future-proof if JS tools are added
 node_modules/
 
 # Data directory (ignore contents but keep folder)
-data/*
-!data/.gitkeep
+data/*               # ignores agent memory database. Your agent will store memory at data/memory.db which should never be committed
+!data/.gitkeep       # keeps the data folder tracked but empty
 
 # Docker override files
 docker-compose.override.yml
