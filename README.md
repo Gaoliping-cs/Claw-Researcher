@@ -32,7 +32,7 @@ Install the following:
 
 ---
 
-# Setup
+## Setup
 
 Clone this repository:
 
@@ -50,3 +50,51 @@ Add your API key inside .env
 ```bash
 OPENAI_API_KEY=your_api_key_here
 ```
+
+## Start the Agent
+```bash
+bash scripts/start.sh
+```
+
+## Chat With The Agent
+
+```bash
+docker exec -it openclaw openclaw chat clawresearcher
+```
+
+Example:
+```bash
+Research the latest AI agent frameworks and summarize them
+```
+
+## Stop the Agent
+
+```bash
+bash scripts/stop.sh
+```
+
+# Example Tasks
+
+Generate startup ideas:
+```bash
+Generate 10 SaaS startup ideas using AI agents
+```
+
+Research a topic:
+```bash
+Summarize the AI coding agent ecosystem
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
