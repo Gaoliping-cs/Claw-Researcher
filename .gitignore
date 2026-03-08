@@ -1,0 +1,18 @@
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Node modules (safety if added later)
+node_modules/
+
+# Data directory (ignore contents but keep folder)
+data/*
+!data/.gitkeep
+
+# Docker override files
+docker-compose.override.yml
