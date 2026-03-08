@@ -39,3 +39,14 @@ Clone this repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/clawresearcher.git
 cd clawresearcher
+```
+
+Create environment file:
+```bash
+cp .env.example .env
+```
+
+Add your API key inside .env
+```bash
+OPENAI_API_KEY=your_api_key_here
+```
